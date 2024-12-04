@@ -1,0 +1,13 @@
+name: Actions for workflow file
+
+on: 
+    workflow_dispatch
+
+jobs:
+    chekout-repo:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - run: ls
