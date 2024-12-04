@@ -1,0 +1,22 @@
+name: HelloWorld
+
+on:
+    push
+
+jobs:
+    Hello-world:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Say hello 
+              run: echo "Started something"
+    
+    Bye-world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: failed step
+              run:
+                echo "I will fail"
+                exit 1
+            - name: Goodbye
+              run: echo "Goodbye!!""
